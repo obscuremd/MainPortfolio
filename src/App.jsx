@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
-import Homepage from "./Screens/Homepage"
 import ProductDesign from './Screens/ProductDesign'
 import GameDevelopment from './Screens/GameDevelopment'
 import Development from './Screens/Development'
@@ -12,6 +11,7 @@ import { useState } from 'react'
 import ProductDescription from './Screens/Description/ProductDescription'
 import DevDescription from './Screens/Description/DevDescription'
 import GameDescription from './Screens/Description/GameDescription'
+import Homepage from './Screens/HomePage'
 
 
 
@@ -32,7 +32,7 @@ const App = () => {
           <div className='fixed z-10'>
             <SideBar/>
           </div>
-           }        
+          }        
           <button onClick={()=>setNavbar(!navbar)} className='fixed md:top-[33px] md:left-[14px] z-20' >
             <MenuOpenRoundedIcon style={styles}/>
           </button>
