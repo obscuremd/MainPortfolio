@@ -42,7 +42,6 @@ const MainScreen = ({details,stack, collections, cat, tool}) => {
         const newData = datas.docs.map((doc) => doc.data());
         setData(newData);
         setLoading(false)
-        console.log(data);
       } catch (error) {
         console.error('Error fetching data:', error);
       }

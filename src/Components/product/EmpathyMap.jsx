@@ -6,7 +6,6 @@ const EmpathyMap = ({ title, data }) => {
 
     const imports = data
 
-    console.log(imports);
 
 
     const isMobile = window.innerWidth <= 600;

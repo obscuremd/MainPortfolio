@@ -7,6 +7,7 @@ import MessageRoundedIcon from '@mui/icons-material/MessageRounded';
 import PersonRoundedIcon from '@mui/icons-material/PersonRounded';
 import { useState } from "react";
 import Button from "../Sidebar/Button";
+import { motion } from "framer-motion";
 
 const SideBar = () => {
 
@@ -18,7 +19,7 @@ const SideBar = () => {
     }
     
   return (
-    <div className="md:w-[220px] h-screen flex flex-col justify-between items-center py-[27.56px] border-r-[0.1px] border-[#9d9fb534]">
+    <div className="md:w-[220px] h-screen flex flex-col justify-between items-center py-[27.56px] border-r-[0.1px] backdrop-blur-md border-[#9d9fb534]">
         {/* header */}
         <Link to={'/'}>
             <button onClick={[()=>setActive(0), window.scrollTo({ top: 0, behavior: 'smooth' })]} className="font-bold md:w-[210px] w-[120px]" style={{fontSize: isMobile ? Styles.text.mobile.large : Styles.text.pc.large,}}>My Portfolio</button>

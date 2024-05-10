@@ -1,4 +1,3 @@
-import React from 'react';
 import Development from './Development';
 import GameDevelopment from './GameDevelopment';
 import ProductDesign from './ProductDesign';
