@@ -11,7 +11,7 @@ const Slider = ({hero,image, description,title, details,link, text, important, i
 
 
   return (
-    <motion.div initial={{x:'50%', opacity:0}} whileInView={{x:0, opacity:1}}>
+    <motion.div initial={{x:'-50%', opacity:0}} whileInView={{x:0, opacity:1}}>
         {/* hero */}
         <div style={{   backgroundImage: `url(${hero})`,
                         backgroundSize: 'cover', // This will make the background image cover the entire container

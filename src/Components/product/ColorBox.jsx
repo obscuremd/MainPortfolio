@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Styles from "../../Shared/Styles";
 
 const ColorBox = ({text, title,color }) => {
@@ -11,7 +12,7 @@ const ColorBox = ({text, title,color }) => {
         fontWeight: 'bold',
     }
   return (
-    <div className='md:pr-[20px] pr-[15px] md:pl-[40px] pl-[15px] w-full rounded-[24.195px] border-[1px] md:py-[25px] py-[17px] flex flex-col gap-4'>
+    <motion.div className='md:pr-[20px] pr-[15px] md:pl-[40px] pl-[15px] w-full rounded-[24.195px] border-[1px] md:py-[25px] py-[17px] flex flex-col gap-4'>
         <p style={big}>Color Pallette</p>
         <div className="flex gap-[15px] flex-wrap">
             {colors.map((item, index)=>(
@@ -27,7 +28,7 @@ const ColorBox = ({text, title,color }) => {
                     >#{item}</div>    
             ))}
         </div>
-    </div>
+    </motion.div>
   )
 }
 
